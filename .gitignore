@@ -45,3 +45,4 @@ app-example
 /.expo
 /.vscode.env
 **/.env
+.env
