@@ -43,5 +43,6 @@ app-example
 /ios
 /android
 /.expo
-/.vscode
+/.vscode.env
+**/.env
 .env

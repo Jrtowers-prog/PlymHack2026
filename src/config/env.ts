@@ -24,7 +24,10 @@ const readGoogleMapsApiKeyFromConstants = (): string | undefined => {
   };
 
   const extra =
-    anyConstants.expoConfig?.extra ?? anyConstants.manifest?.extra ?? anyConstants.manifest2?.extra;
+    anyConstants.expoConfig?.extra ??
+    anyConstants.manifest?.extra ??
+    anyConstants.manifest2?.extra;
+
   const value = extra?.googleMapsApiKey;
   if (typeof value === 'string' && value.trim().length > 0) {
     return value.trim();

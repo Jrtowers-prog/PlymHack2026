@@ -53,3 +53,17 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Location & Maps (added)
+
+- This project now includes `expo-location` and `react-native-maps` as dependencies in `package.json`.
+- The default app (`app/index.tsx`) requests foreground location permission and logs the current coordinates to the console.
+- To install native dependencies and run the app, follow the commands below.
+- To install native dependencies and run the app, follow the commands below.
+
+TODO: If you need an embedded map view, configure `react-native-maps` per the official docs — some platforms require extra native configuration or a development client.
+
+Environment variables:
+
+- Add a Google Maps API key for Geocoding/Directions by setting `EXPO_PUBLIC_GOOGLE_MAPS_API_KEY` in your `.env` or EAS environment config.
+- This project expects the key to be present; services will throw a clear error if the key is missing. Do not commit the key to source control.
