@@ -10,7 +10,12 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Configure Google Maps API key
+
+   Set `EXPO_PUBLIC_GOOGLE_MAPS_API_KEY` in your `.env` or EAS environment variables. The key must have
+   the Maps JavaScript API (for web), Geocoding API, and Routes/Directions API enabled.
+
+3. Start the app
 
    ```bash
    npx expo start

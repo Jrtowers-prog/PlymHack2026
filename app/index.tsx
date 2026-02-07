@@ -1,22 +1,11 @@
-import { StyleSheet, View, Text } from 'react-native';
+/**
+ * Main entry point for the SafeRoute app.
+ * Uses platform file resolution for MapScreen (.web/.native).
+ */
+
+import React from 'react';
+import { MapScreen } from '@/src/components/map/MapScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
-    </View>
-  );
+  return <MapScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
