@@ -44,3 +44,4 @@ app-example
 /android
 /.expo
 /.vscode
+.env
